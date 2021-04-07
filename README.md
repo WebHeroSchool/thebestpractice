@@ -15,7 +15,7 @@
 
   const value = 10;
   let response = 'Ok';
-  
+
 ``` 
 
 
@@ -60,10 +60,18 @@
 
 ```
   **bad practice**
-  if (answer == 4) { console.log(true); } if (attempts != 0) { console.log('Ты пытался') };
+  if (answer == 4) { 
+    console.log(true); 
+    } if (attempts != 0) { 
+    console.log('Ты пытался') 
+    };
 
   **good practice**
-  if (answer === 4) { console.log(true); } if (attempts !== 0) { console.log('Ты пытался') };
+  if (answer === 4) {
+     console.log(true); 
+     } if (attempts !== 0) { 
+      console.log('Ты пытался') 
+    };
 
 ```
 
@@ -77,8 +85,8 @@
   const anotherString = '...';
   const human = true;
   const date = () => {
-    const currentTime = new Date();
-    return currentTime;
+  const currentTime = new Date();
+   return currentTime;
   };
 
   **good practice**
@@ -86,7 +94,7 @@
   const thirdString = '...';
   const isHuman = true;
   const getDate = () => {
-    const currentTime = new Date();
+  const currentTime = new Date();
     return currentTime;
   };
 
